@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\CANFLSAHTOOL.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CANFLSAHTOOL.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\DELPHI.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bitmap2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Fail.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bitmap3.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\success1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bitmap4.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\test.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\icon2.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\favicon.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\FLASH.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bitmap6.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CANFLSAHTOOL.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CANFLSAHTOOLDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectEdit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EcuFileOperate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OperateFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RichEditCtrlEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CAN_protocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xlCANFunctions.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Canlay2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Can_def.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="USB2CAN_interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AN_Flash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FailDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Querydlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SuccessFlash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionSetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckItem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MemDC.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cdisplay.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DongleDll.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildCut.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ES581Function.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="icsnVC40.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CANFLSAHTOOL.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CANFLSAHTOOLDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OperateFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EcuFileOperate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RichEditCtrlEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CANCARD2Func.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xlCANFunctions.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CAN_protocol.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AN_Flash.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FailDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Querydlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SuccessFlash.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionSetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckItem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cdisplay.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildCut.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DongleDll.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ES581Function.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CANFLSAHTOOL.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Debug\vxlapi.lib">
+      <Filter>资源文件</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

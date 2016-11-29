@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C77248EC-A615-4B0E-BF29-AD1635545A7F}</ProjectGuid>
+    <RootNamespace>CANFLSAHTOOL</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>CAN2USB.lib;Setupapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\bitmap3.bmp" />
+    <None Include="res\bitmap4.bmp" />
+    <None Include="res\bitmap6.bmp" />
+    <None Include="res\CANFLSAHTOOL.ico" />
+    <None Include="res\CANFLSAHTOOL.rc2" />
+    <None Include="res\DELPHI.bmp" />
+    <None Include="res\Fail.bmp" />
+    <None Include="res\favicon.ico" />
+    <None Include="res\FLASH.bmp" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\icon2.ico" />
+    <None Include="res\success1.bmp" />
+    <None Include="res\test.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActionSetting.h" />
+    <ClInclude Include="AN_Flash.h" />
+    <ClInclude Include="BuildCut.h" />
+    <ClInclude Include="CANFLSAHTOOL.h" />
+    <ClInclude Include="CANFLSAHTOOLDlg.h" />
+    <ClInclude Include="Canlay2.h" />
+    <ClInclude Include="Can_def.h" />
+    <ClInclude Include="CAN_protocol.h" />
+    <ClInclude Include="cdisplay.h" />
+    <ClInclude Include="CheckItem.h" />
+    <ClInclude Include="ConfigFile.h" />
+    <ClInclude Include="DongleDll.h" />
+    <ClInclude Include="EcuFileOperate.h" />
+    <ClInclude Include="ES581Function.h" />
+    <ClInclude Include="FailDlg.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="icsnVC40.h" />
+    <ClInclude Include="MemDC.h" />
+    <ClInclude Include="OperateFile.h" />
+    <ClInclude Include="ProjectEdit.h" />
+    <ClInclude Include="Querydlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RichEditCtrlEx.h" />
+    <ClInclude Include="SpecialType.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SuccessFlash.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="USB2CAN_interface.h" />
+    <ClInclude Include="xlCANFunctions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ActionSetting.cpp" />
+    <ClCompile Include="AN_Flash.cpp" />
+    <ClCompile Include="BuildCut.cpp" />
+    <ClCompile Include="CANCARD2Func.cpp" />
+    <ClCompile Include="CANFLSAHTOOL.cpp" />
+    <ClCompile Include="CANFLSAHTOOLDlg.cpp" />
+    <ClCompile Include="CAN_protocol.cpp" />
+    <ClCompile Include="cdisplay.cpp" />
+    <ClCompile Include="CheckItem.cpp" />
+    <ClCompile Include="ConfigFile.cpp" />
+    <ClCompile Include="DongleDll.cpp" />
+    <ClCompile Include="EcuFileOperate.cpp" />
+    <ClCompile Include="ES581Function.cpp" />
+    <ClCompile Include="FailDlg.cpp" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="OperateFile.cpp" />
+    <ClCompile Include="ProjectEdit.cpp" />
+    <ClCompile Include="Querydlg.cpp" />
+    <ClCompile Include="RichEditCtrlEx.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SuccessFlash.cpp" />
+    <ClCompile Include="xlCANFunctions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CANFLSAHTOOL.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Debug\vxlapi.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CANFLSAHTOOL.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
